@@ -19,7 +19,7 @@ gulp.task('haml', function() {
 // 「uglify」タスクを定義する
 gulp.task('uglify', function () {
   // タスクを実行するファイルを指定
-  gulp.src('./src/js/example.js')
+  gulp.src('./src/js/*.js')
     // 実行する処理をpipeでつないでいく
     .pipe(uglify()) // uglifyを実行
     .pipe(gulp.dest('public')) // 圧縮したファイルをdistに出力
